@@ -1,22 +1,9 @@
 const express = require("express");
-const connectDB = require("./database");
-const urlRoutes = require("./routes/urls");
-app.use("/api/url", urlRoutes);
-// Create Express app
+const urlRoutes = require("./routes/url");
 const app = express();
+const PORT = 3000;
 
-// Connect to the database
-connectDB();
-
-// Basic route
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
+app.use("/apiurl", urlRoutes);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
-
-// Define PORT
-const PORT = process.env.PORT || 5000;
-
-// Start the server
-app.listen(PORT, () =>
-  console.log(`Server running on http://localhost:${PORT}`)
-);
