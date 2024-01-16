@@ -1,8 +1,6 @@
+import MONGO_URI from ".env";
 const mongoose = require("mongoose");
 require("dotenv").config();
-
-const MONGO_URI =
-  "mongodb+srv://franciscolaranatoli:5k94F6IDjTKWLJwf@url-shortener.cxmnoo4.mongodb.net/?retryWrites=true&w=majority";
 
 const connectDB = async () => {
   try {
