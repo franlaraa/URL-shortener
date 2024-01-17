@@ -9,7 +9,6 @@ html {
     rgba(32, 29, 82, 1) 0%,
     rgba(71, 100, 145, 1) 96%
   );
-  height: 100vh;
 }
 body {
   margin: 0;
