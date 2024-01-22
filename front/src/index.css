@@ -1,25 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  color-scheme: dark;
+}
 html {
-  background: rgb(32, 29, 82);
-  background: linear-gradient(
-    180deg,
-    rgba(32, 29, 82, 1) 0%,
-    rgba(71, 100, 145, 1) 96%
-  );
+  font-family: 'Onest', sans-serif;
+  font-family: system-ui, sans-serif;
+  scroll-behavior: smooth;
 }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(54, 69, 91);
+  background: linear-gradient(
+    180deg,
+    rgba(54, 69, 91, 1) 0%,
+    rgba(72, 95, 130, 1) 46%,
+    rgba(78, 110, 161, 1) 100%
+  ); */
+  background-image: url(header.png);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
