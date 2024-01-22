@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Question from '../components/Question';
-import Footer from '../components/Footer';
 import Section from '../components/Section';
 
 const Home: React.FC = () => {
   return (
     <div className='home'>
-      <Header />
       <main className='px-4'>
         <Section className='my'>
           <Hero />
@@ -60,8 +57,6 @@ const Home: React.FC = () => {
           </Question>
         </Section>
       </main>
-
-      <Footer />
     </div>
   );
 };

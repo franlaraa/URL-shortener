@@ -15,19 +15,18 @@ const Header: React.FC = () => {
           <div className='flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse'>
             <div className='flex w-48 justify-around'>
               <a
-                href='/Francisco_Lara_Natoli_cv.pdf'
-                download='Francisco_Lara_Natoli_cv.pdf'
+                href='/'
                 className='rounded bg-white px-4 py-2 font-bold text-slate-700 text-transparent transition duration-150 ease-in hover:bg-slate-700'
               >
                 Login
               </a>
               <a
-                href='/Francisco_Lara_Natoli_cv.pdf'
-                download='Francisco_Lara_Natoli_cv.pdf'
-                className='rounded border-[2px] border-white bg-transparent px-4 py-2 font-bold text-white transition duration-150 ease-in'
+                href='/'
+                className='rounded border-[2px] border-white bg-transparent px-4 py-2 font-bold text-white transition duration-150 ease-in hover:bg-white hover:bg-cover hover:bg-fixed hover:text-current hover:text-opacity-0'
               >
                 Sign Up
               </a>
+
               <div></div>
             </div>
             <button
@@ -67,10 +66,10 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href='#experience'
+                  href='/profile'
                   className='block rounded px-3 py-2 text-white'
                 >
-                  Experience
+                  Profile
                 </a>
               </li>
             </ul>
