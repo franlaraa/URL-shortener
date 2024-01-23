@@ -6,15 +6,15 @@ const Profile = () => {
   const [username, setUsername] = useState('johndoe');
   const [email, setEmail] = useState('john.doe@example.com');
 
-  const handleNameChange = (e) => {
+  const handleNameChange = (e: any) => {
     setName(e.target.value);
   };
 
-  const handleUsernameChange = (e) => {
+  const handleUsernameChange = (e: any) => {
     setUsername(e.target.value);
   };
 
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: any) => {
     setEmail(e.target.value);
   };
 
