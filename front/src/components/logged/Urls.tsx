@@ -8,6 +8,7 @@ const URLS = [
     visits: 100,
     uploadDate: '2024-01-23',
     image: '/example-1.jpg',
+    url: 'https://example.com/page1',
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const URLS = [
     visits: 200,
     uploadDate: '2024-01-22',
     image: '/example-1.jpg',
+    url: 'https://youtube.com/video1',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const URLS = [
     visits: 150,
     uploadDate: '2024-01-21',
     image: '/example-1.jpg',
+    url: 'https://example.com/video2',
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ const URLS = [
     visits: 300,
     uploadDate: '2024-01-20',
     image: '/example-1.jpg',
+    url: 'https://example.com/url4',
   },
   {
     id: 5,
@@ -36,6 +40,7 @@ const URLS = [
     visits: 180,
     uploadDate: '2024-01-19',
     image: '/example-1.jpg',
+    url: 'https://example.com/url5',
   },
   {
     id: 6,
@@ -43,6 +48,7 @@ const URLS = [
     visits: 250,
     uploadDate: '2024-01-18',
     image: '/example-1.jpg',
+    url: 'https://example.com/url6',
   },
   {
     id: 7,
@@ -50,6 +56,7 @@ const URLS = [
     visits: 120,
     uploadDate: '2024-01-17',
     image: '/example-1.jpg',
+    url: 'https://example.com/url7',
   },
   {
     id: 8,
@@ -57,6 +64,7 @@ const URLS = [
     visits: 280,
     uploadDate: '2024-01-16',
     image: '/example-1.jpg',
+    url: 'https://example.com/url8',
   },
   {
     id: 9,
@@ -64,6 +72,7 @@ const URLS = [
     visits: 200,
     uploadDate: '2024-01-15',
     image: '/example-1.jpg',
+    url: 'https://example.com/url9',
   },
   {
     id: 10,
@@ -71,6 +80,7 @@ const URLS = [
     visits: 150,
     uploadDate: '2024-01-14',
     image: '/example-1.jpg',
+    url: 'https://example.com/url10',
   },
 ];
 
@@ -85,6 +95,7 @@ const Urls: React.FC = () => {
           visits={url.visits}
           date={url.uploadDate}
           image={url.image}
+          url={url.url}
         />
       ))}
     </div>
