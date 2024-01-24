@@ -16,13 +16,13 @@ const Header: React.FC = () => {
             <div className='flex w-48 justify-around'>
               <a
                 href='/'
-                className='rounded bg-white px-4 py-2 font-bold text-slate-700 text-transparent transition duration-150 ease-in hover:bg-slate-700'
+                className='rounded border-2 border-white bg-white px-4 py-2 font-bold  text-black transition duration-150 ease-in hover:bg-transparent hover:text-white'
               >
                 Login
               </a>
               <a
                 href='/'
-                className='rounded border-[2px] border-white bg-transparent px-4 py-2 font-bold text-white transition duration-150 ease-in hover:bg-white hover:bg-cover hover:bg-fixed hover:text-current hover:text-opacity-0'
+                className='rounded border-[2px] border-white bg-transparent px-4 py-2 font-bold text-white transition duration-150 ease-in hover:bg-white hover:bg-cover hover:bg-fixed hover:text-black'
               >
                 Sign Up
               </a>
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             className='hidden w-full items-center justify-between md:order-1 md:flex md:w-auto'
             id='navbar-sticky'
           >
-            <ul className=' mt-4 flex flex-col rounded-lg border border-purple-700 bg-opacity-45 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0 rtl:space-x-reverse  dark:border-gray-700'>
+            <ul className=' mt-4 flex flex-col rounded-lg border border-purple-700 bg-opacity-45 p-4 font-medium dark:border-gray-700 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0  rtl:space-x-reverse'>
               <li>
                 <a href='#about' className='block rounded px-3 py-2 text-white'>
                   About
